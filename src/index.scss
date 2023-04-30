@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+$Primary_text: #4A4A4A;
+$Secondary_text: #A0B0B9;
+$Selected_text: #FFFFFF;
+$Section_color: #FFFFFF;
+$Filter_hover: #F1FCFF;
+$Filter_default: #9ABBCE;
+$Main_blue: #2196F3;
+
+@mixin base-text {
+  font: {
+    family: 'Open Sans', sans-serif;
+    weight: 600;
+    size: 12px;
+  }
+   line-height: 0.6rem;
+   color: $Primary_text;
+}
+
+@mixin price-text {
+  font: {
+    family: 'Open Sans', sans-serif;
+    weight: 600;
+    size: 2rem;
+  }
+   line-height: 2rem;
+   color: $Main_blue;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  @include base-text;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  width: 960px;
+  margin: 0 auto;
+  background-color: #F3F7FA;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}

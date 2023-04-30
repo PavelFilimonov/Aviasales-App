@@ -1,0 +1,72 @@
+@import "../../index.scss";
+
+.Ticket {
+  display: flex;
+  flex-direction: column;
+  width: 504px;
+  height: fit-content;
+  margin: 0 0 20px;
+  padding: 20px 20px 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+  background: $Section_color;
+
+  &_MainInfo {
+    display: flex;
+    width: 462px;
+    height: 36px;
+    margin: 0 0 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_Version {
+    display: flex;
+    width: 462px;
+    height: 39px;
+    margin: 0 0 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.MainInfo {
+  &_Price {
+    display: flex;
+    width: 147px;
+    height: 24px;
+    @include price-text;
+  }
+}
+
+.Version {
+  &_Section {
+    display: flex;
+    flex-direction: column;
+    width: 141px;
+    height: 39px;
+    @include base-text;
+  }
+}
+
+.Section {
+  &_Header {
+    display: flex;
+    width: 100%;
+    height: 18px;
+    color: $Secondary_text;
+    line-height: 1.5rem;
+    letter-spacing: 0.5px;
+    align-items: center;
+  }
+
+  &_Value {
+    display: flex;
+    width: 100%;
+    height: 21px;
+    font-size: 1.17rem;
+    line-height: 1.75rem;
+    align-items: center;
+  }
+}
