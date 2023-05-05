@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 
-$Primary_text: #4A4A4A;
-$Secondary_text: #A0B0B9;
-$Selected_text: #FFFFFF;
-$Section_color: #FFFFFF;
-$Filter_hover: #F1FCFF;
-$Filter_default: #9ABBCE;
-$Main_blue: #2196F3;
+$Primary_text: #4a4a4a;
+$Secondary_text: #a0b0b9;
+$Selected_text: #ffffff;
+$Section_color: #ffffff;
+$Filter_hover: #f1fcff;
+$Filter_default: #9abbce;
+$Main_blue: #2196f3;
 
 @mixin base-text {
   font: {
@@ -14,8 +14,8 @@ $Main_blue: #2196F3;
     weight: 600;
     size: 12px;
   }
-   line-height: 0.6rem;
-   color: $Primary_text;
+  line-height: 0.6rem;
+  color: $Primary_text;
 }
 
 @mixin price-text {
@@ -24,11 +24,12 @@ $Main_blue: #2196F3;
     weight: 600;
     size: 2rem;
   }
-   line-height: 2rem;
-   color: $Main_blue;
+  line-height: 2rem;
+  color: $Main_blue;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   @include base-text;
@@ -39,7 +40,7 @@ html, body {
   flex-direction: column;
   width: 960px;
   margin: 0 auto;
-  background-color: #F3F7FA;
+  background-color: #f3f7fa;
 }
 
 .main {

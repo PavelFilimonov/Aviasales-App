@@ -1,4 +1,4 @@
-@import "../../index.scss";
+@import '../../index.scss';
 
 .Filter {
   display: flex;
@@ -38,7 +38,7 @@
   box-sizing: border-box;
   font-weight: 400;
   size: 1.083rem;
-  cursor: url("./../../assets/Cursor.png"), pointer;
+  cursor: url('./../../assets/Cursor.png'), pointer;
 }
 
 .CustomCheckbox {
@@ -46,7 +46,7 @@
   z-index: -1;
   opacity: 0;
 
-  &+label {
+  & + label {
     display: inline-flex;
     align-items: center;
     user-select: none;
@@ -71,30 +71,30 @@
   }
 
   /* стили для чекбокса, находящегося в состоянии checked */
-  &:checked+label::before {
+  &:checked + label::before {
     border-color: $Main_blue;
     background-color: inherit;
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEyIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik00LjI4NTcxIDhMMCA0LjE2MTIzTDEuMjA4NTcgMy4wNzg3TDQuMjg1NzEgNS44MjcyNkwxMC43OTE0IDBMMTIgMS4wOTAyMUw0LjI4NTcxIDhaIiBmaWxsPSIjMjE5NkYzIi8+Cjwvc3ZnPgo=");
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEyIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik00LjI4NTcxIDhMMCA0LjE2MTIzTDEuMjA4NTcgMy4wNzg3TDQuMjg1NzEgNS44MjcyNkwxMC43OTE0IDBMMTIgMS4wOTAyMUw0LjI4NTcxIDhaIiBmaWxsPSIjMjE5NkYzIi8+Cjwvc3ZnPgo=');
   }
 
   /* стили при наведении курсора на checkbox */
-  &:not(:disabled):not(:checked)+label:hover::before {
+  &:not(:disabled):not(:checked) + label:hover::before {
     border-color: $Main_blue;
   }
   /* стили для активного состояния чекбокса (при нажатии на него) */
-  &:not(:disabled):active+label::before {
+  &:not(:disabled):active + label::before {
     border-color: $Main_blue;
   }
   /* стили для чекбокса, находящегося в фокусе */
-  &:focus+label::before {
+  &:focus + label::before {
     border-color: $Main_blue;
   }
   /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
-  &:focus:not(:checked)+label::before {
+  &:focus:not(:checked) + label::before {
     border-color: $Main_blue;
   }
   /* стили для чекбокса, находящегося в состоянии disabled */
-  &:disabled+label::before {
+  &:disabled + label::before {
     background-color: #e9ecef;
   }
 }

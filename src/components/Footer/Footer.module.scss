@@ -1,0 +1,26 @@
+@import '../../index.scss';
+
+.Footer {
+  display: flex;
+  width: 100%;
+  margin: 0 0 50px;
+
+  &_Btn {
+    display: flex;
+    width: 504px;
+    height: 50px;
+    margin: 0 0 0 355px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    @include base-text;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    background: #2196f3;
+    color: #ffffff;
+    box-sizing: border-box;
+    cursor: url('./../../assets/Cursor.png'), pointer;
+    border: none;
+    border-radius: 5px;
+  }
+}
